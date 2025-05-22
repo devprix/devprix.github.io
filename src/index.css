@@ -73,3 +73,16 @@ p {
 .points {
   width: 15%;
 }
+
+.iframe {
+  background-image: none;
+}
+
+.iframe .header,
+.iframe p {
+  display: none;
+}
+
+.iframe table {
+  margin: 0;
+}
