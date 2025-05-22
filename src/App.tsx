@@ -79,7 +79,7 @@ function App() {
         <div className="column">
           <Leaderboard data={paddedResults} offset={0} />
           <p>
-            Ranking is based on points and time it took to complete the test.
+            Scoring is based on a total of 600 points, with a focus on both correctness and efficiency.
           </p>
           <p>Last updated: {updated.toLocaleString()}</p>
         </div>
