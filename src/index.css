@@ -5,7 +5,7 @@ html, body {
 
 html {
   min-height: 100vh;
-  background: #1e1919 url('background.png') no-repeat right bottom;
+  background: #1e1919 url('/background.png') no-repeat right bottom;
   background-size: 50%;
   color: #fff;
   font-family: "Anta", sans-serif;
