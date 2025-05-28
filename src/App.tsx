@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import logo from "/logo.png";
-import qrCode from "/qr-code.svg";
+import qrCode from "/qr-code-new.svg";
 
 interface Result {
   id: string;
