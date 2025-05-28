@@ -12,7 +12,9 @@ function QRCode() {
   return (
     <figure className="qr">
       <img src={qrCode} alt="" className="qr-img" />
-      <figcaption className="qr-description">Scan to enter the competition</figcaption>
+      <figcaption className="qr-description">
+        Scan to enter the competition
+      </figcaption>
     </figure>
   );
 }
@@ -93,8 +95,8 @@ function App() {
         <div className="column">
           <Leaderboard data={paddedResults} offset={0} />
           <p>
-            Scoring is based on a total of 600 points, with a focus on both
-            correctness and efficiency.
+            Ranking is based on a total of 600 points and time it took to
+            complete the test
           </p>
           <p>Last updated: {updated.toLocaleString()}</p>
         </div>
