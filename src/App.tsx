@@ -47,10 +47,12 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
+      // @ts-expect-error "DEVPRIX_LOCATION" is set in the HTML files
+      const location = window.DEVPRIX_LOCATION;
       const response = await fetch(
         `https://sheets.googleapis.com/v4/spreadsheets/${
           import.meta.env.VITE_SHEET_ID
-        }/values/Results_${window.DEVPRIX_LOCATION}?key=${import.meta.env.VITE_API_KEY}`
+        }/values/Results_${location}?key=${import.meta.env.VITE_API_KEY}`
       );
       const { values } = await response.json();
       setResults(
