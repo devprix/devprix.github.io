@@ -1,22 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import logo from "/logo.png";
-import qrCode from "/qr-code-new.svg";
 
 interface Result {
   id: string;
   name: string;
   score: number;
-}
-
-function QRCode() {
-  return (
-    <figure className="qr">
-      <img src={qrCode} alt="" className="qr-img" />
-      <figcaption className="qr-description">
-        Scan to enter the competition
-      </figcaption>
-    </figure>
-  );
 }
 
 function Leaderboard({
@@ -62,7 +50,7 @@ function App() {
       const response = await fetch(
         `https://sheets.googleapis.com/v4/spreadsheets/${
           import.meta.env.VITE_SHEET_ID
-        }/values/Results?key=${import.meta.env.VITE_API_KEY}`
+        }/values/Results_${window.DEVPRIX_LOCATION}?key=${import.meta.env.VITE_API_KEY}`
       );
       const { values } = await response.json();
       setResults(
@@ -85,11 +73,9 @@ function App() {
   return (
     <>
       <header className="header">
-        <QRCode />
         <h1>
           <img src={logo} alt="Dropbox Dev Prix" className="logo" />
         </h1>
-        <QRCode />
       </header>
       <main>
         <div className="column">
