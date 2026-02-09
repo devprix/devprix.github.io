@@ -12,8 +12,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        namer: resolve(__dirname, 'namer/index.html'),
-        mexico: resolve(__dirname, 'mexico/index.html'),
+        namer: resolve(__dirname, 'like-a-gamer/index.html'),
       },
     },
   },
