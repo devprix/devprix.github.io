@@ -12,7 +12,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        namer: resolve(__dirname, 'like-a-gamer/index.html'),
+        likeagamer: resolve(__dirname, 'like-a-gamer/index.html'),
       },
     },
   },
